@@ -11,6 +11,7 @@ public class SwapTwoNumbers {
         System.out.println("Input num2");
         num2 = scanner.nextInt();
         swapNumbers(num1, num2);
+        scanner.close();
     }
 
     static void swapNumbers(int n1, int n2) {
