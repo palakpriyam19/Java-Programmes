@@ -14,11 +14,11 @@ public class SwapTwoNumbers {
     }
 
     static void swapNumbers(int n1, int n2) {
-        System.out.println(STR."Before swap: num1= \{n1}, num2= \{n2}");
+        System.out.println("Before swap: num1= " +n1 + "num2= " +n2);
         int temp = 0;
         temp = n1;
         n1 = n2;
         n2 = temp;
-        System.out.println(STR."After swap: num1= \{n1}, num2=\{n2}");
+        System.out.println("After swap: num1= " +n1 + "num2= " +n2);
     }
 }
