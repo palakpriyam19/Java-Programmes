@@ -17,14 +17,11 @@ public class PalindromeChecker {
     }
 
     private static boolean palindromeChecker(String str){
-        String reversed = "";
+        StringBuilder reversed = new StringBuilder();
         str = str.toLowerCase();
         for(int i = str.length() - 1; i >= 0; i--) {
-           reversed += str.charAt(i);
+           reversed.append(str.charAt(i));
         }
-        if (reversed.equals(str))
-            return true;
-        else
-            return false;
+        return reversed.toString().equals(str);
     }
 }
