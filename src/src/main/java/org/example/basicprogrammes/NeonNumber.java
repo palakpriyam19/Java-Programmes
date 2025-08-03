@@ -9,8 +9,8 @@ public class NeonNumber {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number: ");
         num = scanner.nextInt();
-        scanner.close();
         neonNumberChecker(num);
+        scanner.close();
     }
 
     static void neonNumberChecker(int n) {
@@ -26,8 +26,8 @@ public class NeonNumber {
             sq = sq / 10;
         }
 
-        while (n != 0) {
-            if (digit > 1) {
+        if (digit > 1) {
+            while (n != 0) {
                 sum2 += n % 10;
                 n = n / 10;
             }
